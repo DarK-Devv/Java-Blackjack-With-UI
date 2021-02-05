@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="820.0" style="-fx-background-color: darkgreen;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.InGameViewController">
+   <children>
+      <Button fx:id="hitButton" disable="true" layoutX="125.0" layoutY="480.0" mnemonicParsing="false" onAction="#hit" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -1.4;" text="Hit" textAlignment="CENTER" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="607.0" AnchorPane.topAnchor="480.0">
+         <font>
+            <Font name="Cooper Black" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="standButton" disable="true" layoutX="606.0" layoutY="480.0" mnemonicParsing="false" onAction="#stand" style="-fx-background-radius: 15; -fx-background-insets: -1.4; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey;" text="Stand" textAlignment="CENTER" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="602.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="480.0">
+         <font>
+            <Font name="Cooper Black" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuButton" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Menu" AnchorPane.bottomAnchor="590.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="95.0" layoutY="14.0" mnemonicParsing="false" onAction="#instructionsButton" prefHeight="35.0" prefWidth="133.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Instructions" AnchorPane.bottomAnchor="590.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="592.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="516.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" text="Dealer's hand" AnchorPane.bottomAnchor="479.98486328125" AnchorPane.leftAnchor="516.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="118.87109375">
+         <font>
+            <Font name="Cooper Black" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="95.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" text="Your hand" AnchorPane.bottomAnchor="478.98486328125" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="535.6103515625" AnchorPane.topAnchor="119.87109375">
+         <font>
+            <Font name="Cooper Black" size="35.0" />
+         </font>
+      </Text>
+      <Button disable="true" layoutX="144.0" layoutY="570.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Double" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="592.0" AnchorPane.topAnchor="570.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="splitButton" disable="true" layoutX="368.0" layoutY="570.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Split" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="368.0" AnchorPane.rightAnchor="368.0" AnchorPane.topAnchor="570.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="240.0" layoutY="570.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Surrender" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="462.0" AnchorPane.topAnchor="570.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="462.0" layoutY="570.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Insurance" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="462.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="570.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="585.0" layoutY="570.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey; -fx-background-insets: -0.5;" text="Even money" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="585.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="570.0">
+         <font>
+            <Font name="Cooper Black" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="betField" alignment="CENTER" layoutX="306.0" layoutY="433.0" prefHeight="40.0" prefWidth="210.0" promptText="Place your bet" style="-fx-background-radius: 15; -fx-background-insets: -1.4; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey;" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="440.0">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="dealButton" layoutX="360.0" layoutY="480.0" mnemonicParsing="false" onAction="#deal" style="-fx-background-radius: 15; -fx-background-insets: -1.4; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: dimgrey;" text="Deal" textAlignment="CENTER" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="358.0" AnchorPane.topAnchor="480.0">
+         <font>
+            <Font name="Cooper Black" size="26.0" />
+         </font>
+      </Button>
+      <Text fx:id="playerCard1" layoutX="93.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerCard2" layoutX="93.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="240.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerCard3" layoutX="95.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="290.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerCard4" layoutX="93.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dealerCard1" layoutX="539.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dealerCard2" layoutX="539.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="240.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dealerCard3" layoutX="539.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="290.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dealerCard4" layoutX="539.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerCurrency" layoutX="674.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="500.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" text="Currency:">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerTotal" layoutX="157.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" wrappingWidth="29.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dealerTotal" layoutX="647.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-stroke-width: 2; -fx-stroke: black;" wrappingWidth="29.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

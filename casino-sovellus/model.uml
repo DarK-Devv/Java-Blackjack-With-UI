@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model</OriginalElement>
+  <nodes>
+    <node x="237.75" y="1128.0">model.testimain</node>
+    <node x="426.0" y="337.5">model.Logger</node>
+    <node x="180.75" y="802.0">model.BlackJack</node>
+    <node x="212.0" y="260.0">model.Hand</node>
+    <node x="226.60705128205126" y="586.0">model.Player</node>
+    <node x="119.84807692307686" y="0.0">model.Card</node>
+    <node x="0.0" y="315.0">model.Deck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.Deck" target="model.Card">
+      <point x="0.0" y="-83.0" />
+      <point x="95.5" y="240.0" />
+      <point x="153.59807692307686" y="240.0" />
+      <point x="-33.75" y="105.0" />
+    </edge>
+    <edge source="model.testimain" target="model.Logger">
+      <point x="50.0" y="-27.0" />
+      <point x="362.75" y="1103.0" />
+      <point x="560.8333333333334" y="1103.0" />
+      <point x="560.8333333333334" y="561.0" />
+      <point x="587.6666666666667" y="561.0" />
+      <point x="64.66666666666669" y="60.5" />
+    </edge>
+    <edge source="model.testimain" target="model.BlackJack">
+      <point x="-50.0" y="-27.0" />
+      <point x="262.75" y="1103.0" />
+      <point x="224.75" y="1103.0" />
+      <point x="-44.0" y="138.0" />
+    </edge>
+    <edge source="model.Player" target="model.Logger">
+      <point x="60.375" y="-83.0" />
+      <point x="367.48205128205126" y="561.0" />
+      <point x="458.3333333333333" y="561.0" />
+      <point x="-64.66666666666667" y="60.5" />
+    </edge>
+    <edge source="model.BlackJack" target="model.Player">
+      <point x="0.0" y="-138.0" />
+      <point x="268.75" y="782.0" />
+      <point x="266.85705128205126" y="782.0" />
+      <point x="-40.25" y="83.0" />
+    </edge>
+    <edge source="model.BlackJack" target="model.Deck">
+      <point x="-70.4" y="-138.0" />
+      <point x="198.35" y="782.0" />
+      <point x="97.01474358974355" y="782.0" />
+      <point x="97.01474358974355" y="561.0" />
+      <point x="47.75" y="561.0" />
+      <point x="-47.75" y="83.0" />
+    </edge>
+    <edge source="model.Player" target="model.Hand">
+      <point x="-20.125" y="-83.0" />
+      <point x="286.98205128205126" y="561.0" />
+      <point x="260.5" y="561.0" />
+      <point x="-48.5" y="138.0" />
+    </edge>
+    <edge source="model.Player" target="model.Card">
+      <point x="-60.375" y="-83.0" />
+      <point x="246.73205128205126" y="561.0" />
+      <point x="201.5" y="561.0" />
+      <point x="201.5" y="240.0" />
+      <point x="198.59807692307686" y="240.0" />
+      <point x="11.25" y="105.0" />
+    </edge>
+    <edge source="model.Hand" target="model.Card">
+      <point x="48.5" y="-138.0" />
+      <point x="357.5" y="230.0" />
+      <point x="243.59807692307686" y="230.0" />
+      <point x="56.25" y="105.0" />
+    </edge>
+    <edge source="model.BlackJack" target="model.Logger">
+      <point x="70.39999999999998" y="-138.0" />
+      <point x="339.15" y="782.0" />
+      <point x="549.8333333333334" y="782.0" />
+      <point x="549.8333333333334" y="561.0" />
+      <point x="523.0" y="561.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.42013311148086524" x="310.0" y="581.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
